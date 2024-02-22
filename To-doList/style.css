@@ -3,34 +3,52 @@ body{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .todo-wrapper{
+    text-align: center;
     margin-top: 50px;
     background-color: burlywood;
     border-radius: 15px;
     margin-left: auto;
     margin-right: auto;
     padding: 25px;
-    font-weight: 250;
+    font-weight: 300;
 }
 
 .toodo-wrapper h2{
     margin: 0;
+    text-align: center;
 }
 
 .todo-wrapper p{
     font-style: italic;
     color: grey;
     margin: 5px 0;
+    text-align: center;
 }
 
 .todo-wrapper ol{
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 .todo-wrapper ol li{
-    margin: 5px 0;
+    margin: 10px;
     padding: 3px;
+    text-align: justify;
     transition: all 0.5s ease-in-out;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.5s ease-out;
 }
+
+    .todo-wrapper ol li:nth-child(even){
+        background: #ddd;
+    }
+
+    .todo-wrapper .completed{
+        text-decoration: line-through;
+        color: #666;
+    }
 
 .todo-wrapper form{
     display: inline-block;
@@ -41,6 +59,7 @@ body{
 }
 
 .todo-wrapper .pretty-button:hover{
+    color:rgb(39, 75, 192);
     cursor: pointer;
     opacity: 0.7;
 }
@@ -55,4 +74,44 @@ body{
     text-align: center;
     display:inline-block;
     font-size: small;
+}
+
+.todo-wrapper input{
+    padding: 3px 6px;
+    text-align: center;
+}
+
+#control-wrapper{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.todo-wrapper #clear-button{
+    background-color: #49B749;
+}
+
+.todo-wrapper #empty-button{
+    background-color: #ec3a40;
+}
+
+@media only screen and(min-width: 1400px){
+    .todo-wrapper{
+        width: 50%;
+    }
+
+    .todo-wrapper input{
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 1399px) and (min-width: 750px){
+    .todo-wrapper{
+        width: 75%;
+    }
+
+    .todo-wrapper input{
+        width: 400px;
+    }
 }
