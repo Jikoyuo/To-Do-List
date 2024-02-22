@@ -1,0 +1,23 @@
+body{
+    background-color: wheat;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.todo-wrapper{
+    margin-top: 50px;
+    background-color: burlywood;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    font-weight: 250;
+}
+
+.toodo-wrapper h2{
+    margin: 0;
+}
+
+.todo-wrapper p{
+    font-style: italic;
+    color: grey;
+    margin: 5px 0;
+}
